@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="Cbn-fg-a7b">
+                                <rect key="frame" x="8" y="28" width="584" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4MC-8i-JbL">
+                                        <rect key="frame" x="8" y="8" width="568" height="83"/>
+                                        <color key="backgroundColor" red="0.1966932025" green="1" blue="0.53368976489999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHE-m0-Rpf">
+                                        <rect key="frame" x="8" y="99" width="568" height="21"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.15085613179999999" green="1" blue="0.92456538779999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ZHE-m0-Rpf" secondAttribute="trailing" constant="8" id="1RH-Qz-6We"/>
+                                    <constraint firstItem="4MC-8i-JbL" firstAttribute="top" secondItem="Cbn-fg-a7b" secondAttribute="top" constant="8" id="DcQ-8p-cq0"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZHE-m0-Rpf" secondAttribute="bottom" constant="8" id="Kec-xh-JWe"/>
+                                    <constraint firstAttribute="trailing" secondItem="4MC-8i-JbL" secondAttribute="trailing" constant="8" id="Ltp-nu-ob4"/>
+                                    <constraint firstItem="ZHE-m0-Rpf" firstAttribute="top" secondItem="4MC-8i-JbL" secondAttribute="bottom" constant="8" id="POj-2J-MUe"/>
+                                    <constraint firstItem="ZHE-m0-Rpf" firstAttribute="leading" secondItem="Cbn-fg-a7b" secondAttribute="leading" constant="8" id="Ttl-ei-ANk"/>
+                                    <constraint firstItem="4MC-8i-JbL" firstAttribute="leading" secondItem="Cbn-fg-a7b" secondAttribute="leading" constant="8" id="my1-6S-z6o"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cbn-fg-a7b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="h0o-x1-HUE"/>
+                            <constraint firstItem="Cbn-fg-a7b" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="jEq-JB-PQn"/>
+                            <constraint firstAttribute="trailing" secondItem="Cbn-fg-a7b" secondAttribute="trailing" constant="8" id="p2w-hW-vgL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomLabel" destination="ZHE-m0-Rpf" id="Q3i-4R-2o1"/>
+                        <outlet property="topLabel" destination="4MC-8i-JbL" id="Swv-yO-MVe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="527" y="502"/>
+        </scene>
+    </scenes>
+</document>
